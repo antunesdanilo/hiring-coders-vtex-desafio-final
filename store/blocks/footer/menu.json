@@ -1,0 +1,286 @@
+{
+  "vtex.menu@2.x:menu#Products": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#novidades",
+      "menu-item#ofertas"
+    ]
+  },
+  "menu-item#novidades": {
+    "props": {
+      "id": "menu-item-novidades",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/store?order=OrderByReleaseDateDESC",
+        "noFollow": false,
+        "tagTitle": "Novidades",
+        "text": "Novidades",
+        "orderBy": "OrderByReleaseDateDESC"
+      }
+    }
+  },
+  "menu-item#ofertas": {
+    "props": {
+      "id": "menu-item-ofertas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/139?map=productClusterIds",
+        "noFollow": false,
+        "tagTitle": "Ofertas",
+        "text": "Ofertas"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#footer-masculino": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#camisas-masculinas",
+      "menu-item#moletons-masculinos",
+      "menu-item#Shorts-masculinos"
+    ]
+  },
+  "menu-item#camisas-masculinas": {
+    "props": {
+      "id": "menu-item-camisas-masculinas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/roupas/masculinas/camisas-masculinas",
+        "noFollow": true,
+        "tagTitle": "Camisas - Masculino",
+        "text": "Camisas - Masculino"
+      }
+    }
+  },
+  "menu-item#moletons-masculinos": {
+    "props": {
+      "id": "menu-item-moletons-masculinos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/roupas/masculinas/moletons-masculinos",
+        "noFollow": true,
+        "tagTitle": "Moletons - Masculino",
+        "text": "Moletons - Masculino"
+      }
+    }
+  },
+  "menu-item#Shorts-masculinos": {
+    "props": {
+      "id": "menu-item-Shorts-masculinos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/roupas/masculinas/shorts",
+        "noFollow": true,
+        "tagTitle": "Shorts - Masculino",
+        "text": "Shorts - Masculino"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#footer-meias": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#meias",
+      "menu-item#variedades"
+    ]
+  },
+  "menu-item#meias": {
+    "props": {
+      "id": "menu-item-meias",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/roupas/meias",
+        "noFollow": true,
+        "tagTitle": "Meias",
+        "text": "Meias"
+      }
+    }
+  },
+  "menu-item#variedades": {
+    "props": {
+      "id": "menu-item-variedades",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/variedades",
+        "noFollow": true,
+        "tagTitle": "Variedades",
+        "text": "Variedades"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#footer-roupas-femininas": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#calcas-femininas",
+      "menu-item#camisas-femininas",
+      "menu-item#moletons-femininos"
+    ]
+  },
+  "vtex.menu@2.x:menu#footer-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#roupas-femininas-mobile",
+      "menu-item#masculino-mobile",
+      "menu-item#ofertas-mobile"
+    ]
+  },
+  "menu-item#roupas-femininas-mobile": {
+    "props": {
+      "id": "menu-item-category-roupas-femininas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/roupas/femininas",
+        "noFollow": true,
+        "tagTitle": "Feminino",
+        "text": "Feminino"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#roupas-femininas"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#roupas-femininas": {
+    "children": [
+      "vtex.menu@2.x:menu#roupas-femininas-accordion"
+    ]
+  },
+  "vtex.menu@2.x:menu#roupas-femininas-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#calcas-femininas",
+      "menu-item#camisas-femininas",
+      "menu-item#moletons-femininos"
+    ]
+  },
+  "menu-item#masculino-mobile": {
+    "props": {
+      "itemProps": {
+        "tagTitle": "Masculino",
+        "text": "Masculino"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#masculino"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#masculino": {
+    "children": [
+      "vtex.menu@2.x:menu#footer-masculino-mobile"
+    ]
+  },
+  "vtex.menu@2.x:menu#footer-masculino-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#camisas-masculinas",
+      "menu-item#moletons-masculinos",
+      "menu-item#Shorts-masculinos"
+    ]
+  },
+  "menu-item#ofertas-mobile": {
+    "props": {
+      "itemProps": {
+        "type": "internal",
+        "href": "/139?map=productClusterIds",
+        "noFollow": true,
+        "tagTitle": "Ofertas",
+        "text": "Ofertas"
+      }
+    }
+  },
+  "menu-item#roupas-femininas": {
+    "props": {
+      "id": "menu-item-category-roupas-femininas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/roupas/femininas",
+        "noFollow": true,
+        "tagTitle": "Feminino",
+        "text": "Feminino"
+      }
+    }
+  },
+  "menu-item#camisas-femininas": {
+    "props": {
+      "id": "menu-item-camisas-femininas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/roupas/femininas/camisas-femininas",
+        "noFollow": false,
+        "tagTitle": "Camisas - Feminino",
+        "text": "Camisas - Feminino"
+      }
+    }
+  },
+  "menu-item#calcas-femininas": {
+    "props": {
+      "id": "menu-item-calcas-femininas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/roupas/femininas/calcas-femininas",
+        "noFollow": false,
+        "tagTitle": "Calças - Feminino",
+        "text": "Calças - Feminino"
+      }
+    }
+  },
+  "menu-item#moletons-femininos": {
+    "props": {
+      "id": "menu-item-moletons-femininos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/roupas/femininas/moletons-femininos",
+        "noFollow": false,
+        "tagTitle": "Moletons - Feminino",
+        "text": "Moletons - Feminino"
+      }
+    }
+  }
+}

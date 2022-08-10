@@ -1,0 +1,94 @@
+{
+  "store.home": {
+    "blocks": [
+      "list-context.image-list#demo",
+      /* You can make references to blocks defined in other files.
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      "flex-layout.row#deals",
+      "__fold__",
+      "rich-text#shelf-title",
+      "flex-layout.row#shelf",
+      "info-card#home",
+      "slider-layout#home"
+    ]
+  },
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 570,
+      "preload": true,
+      "images": [
+        {
+          "image": "https://imgkub.com/images/2022/08/04/banner-dia-dos-pais-bitsized-2.png",
+          "mobileImage": "https://imgkub.com/images/2022/08/06/banner-dia-dos-pais-bitsized-mobile.png"
+        },
+        {
+          "image": "https://imgkub.com/images/2022/07/14/desktop.png",
+          "mobileImage": "https://imgkub.com/images/2022/08/04/banner-principal-bitisized-mobile.png"
+        },
+        {
+          "image": "https://imgkub.com/images/2022/07/29/banner-novidades-bitsized6184cd541499172d.gif",
+          "mobileImage": "https://imgkub.com/images/2022/08/04/banner-novidades-bitsized-mobile.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel",
+      "autoplay": {
+        "timeout": 7000,
+        "stopOnHover": true
+      }
+    }
+  },
+
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## Ofertas",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"]
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByBestDiscountDESC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://imgkub.com/images/2022/07/29/Moda-Fashion-Banner-Bitsized.gif",
+      "headline": "Tendências",
+      "callToActionText": "DESCOBRIR",
+      "callToActionUrl": "/roupas",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  }
+}
